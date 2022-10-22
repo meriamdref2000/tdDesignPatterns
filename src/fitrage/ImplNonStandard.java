@@ -1,3 +1,5 @@
+package fitrage;
+
 public class ImplNonStandard{
 
     public int[] filtrerAncienne(int[] data){

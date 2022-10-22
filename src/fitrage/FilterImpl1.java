@@ -1,3 +1,5 @@
+package fitrage;
+
 public class FilterImpl1 implements Filter{
     public int[] filtrer(int[] data){
         for (int i = 0; i < data.length ; i++) {

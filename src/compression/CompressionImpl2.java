@@ -1,3 +1,5 @@
+package compression;
+
 public class CompressionImpl2 extends CompressionTemplate{
     @Override
     protected int compresser1() {

@@ -1,3 +1,5 @@
+package compression;
+
 public abstract class CompressionTemplate {
     public int[] compresser(int[] data){
         System.out.println("image compresser avec succès");
