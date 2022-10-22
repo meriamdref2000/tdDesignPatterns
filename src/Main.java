@@ -4,20 +4,24 @@ import compression.CompressionTemplate;
 import fitrage.Filter;
 import fitrage.FilterImpl1;
 import fitrage.adapter.FilterImplAdapter;
+import fitrage.adapter.ImplNonStandard;
+import framework.Framework;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] image = {1, 5, 6, 2, 8, 34, 0};
-        Filter filter1 = new FilterImpl1();
-        Filter filter2 = new FilterImplAdapter();
-        CompressionTemplate compressionTemplate1= new CompressionImpl1();
-        CompressionTemplate compressionTemplate2= new CompressionImpl2();
-       /* filter1.filtrer(image);
+        int[] image = {1, 5, 6};
+        Framework framework = new Framework();
+        System.out.println("impl filtre1");
+        framework.setFilter(new FilterImpl1());
+        framework.appliquerFiltre(image);
+        System.out.println("impl ancienne");
+        framework.setFilter(new FilterImplAdapter());
+        framework.appliquerFiltre(image);
 
-        */
-        filter2.filtrer(image);
-        //compressionTemplate1.compresser(image);
-        compressionTemplate2.compresser(image);
+        framework.setCompressionTemplate(new CompressionImpl1());
+        framework.appliquerCompression(image);
+
+
     }
 }
