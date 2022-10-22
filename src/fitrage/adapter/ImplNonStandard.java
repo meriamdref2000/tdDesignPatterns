@@ -1,4 +1,4 @@
-package fitrage;
+package fitrage.adapter;
 
 public class ImplNonStandard{
 

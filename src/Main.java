@@ -3,7 +3,7 @@ import compression.CompressionImpl2;
 import compression.CompressionTemplate;
 import fitrage.Filter;
 import fitrage.FilterImpl1;
-import fitrage.FilterImplAdapter;
+import fitrage.adapter.FilterImplAdapter;
 
 public class Main {
 
